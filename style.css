@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Audrey; 
+    src: url("fonts/Audrey-Normal.otf")
+}
+
+body {
+    margin: 0px;
+    background-color: #dfd5be;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 600px;
+}
+
+#title{
+    margin-bottom: 60px;
+}
+
+#description{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Libre Baskerville';
+    font-size: 30px;
+    margin: 0px 0px 10px 0px;
+}
+
+#header {
+    margin-top: 100px;
+    text-align: center;
+    font-family: "Audrey";
+    font-size: 40px;
+    line-height: 10%;
+    clear: both;
+    display: block;
+}
+
+#survey-form {
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Libre Baskerville';
+}
+
+input {
+    margin: 10px 0px 10px 0px;
+    border-radius: 18px;
+    border: none;
+    font-size: 30px;
+    color: black;
+    font-family: 'Libre Baskerville';
+    text-align: center;
+    scrollbar-width: thin;
+    scrollbar-color: hwb(45 73% 15%);
+    outline: none;
+}
+
+input:focus, input:hover, 
+input:hover::-webkit-input-placeholder,
+select:hover, select:focus,
+textarea:hover, textarea:focus,
+textarea:hover::-webkit-input-placeholder {
+    background-color: hwb(45 55% 33%);
+    color: white;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type = "number"] {
+    width: 410px;
+}
+
+
+input[type = "radio"], input[type = "checkbox"] {
+    height: 20px;
+    width: 20px;
+    accent-color: hwb(45 55% 33%);
+}
+
+input[type = "radio"]:hover,
+input[type = "checkbox"]:hover,
+input[type = "radio"]:focus,
+input[type = "checkbox"]:focus
+{
+    height: 25px;
+    width: 25px;
+}
+
+select, option {
+    margin: 10px 0px 10px 0px;
+    font-size: 20px;
+    border-radius: 18px;
+    font-family: 'Libre Baskerville';
+    border: 0px;
+    outline: 0px;
+    text-align: center;
+}
+
+textarea {
+    margin: 20px;
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 150px;
+    max-height: 150px;
+    font-size: 20px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 18px;
+    color: black;
+    font-family: 'Libre Baskerville';
+}
+
+label[for = "customerOpinion"] {
+    display: inline-block;
+    margin-top: 20px;
+}

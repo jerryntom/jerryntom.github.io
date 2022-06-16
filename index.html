@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Soapie - customer feedback</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id = "header">
+            <h1 id = "title">SOAPIE</h1>
+            <p id = "description">Thank you for your purchase</p>
+        </div>
+        <form id = "survey-form">
+            <label id = "name-label" for = "name">
+                <input placeholder = "Name" id = "name" name = "name" type = "text" required><br>
+            </label>
+            <label id = "email-label" for = "email">
+                <input placeholder = "Mail address" id = "email" name = "email" type = "email" required><br>
+            </label>
+            <label id = "number-label" for = "number">
+                <input placeholder = "Age" id = "number" name = "number" type = "number" min = 1 max = 150 required><br>
+            </label>
+            <label id = "rate-label" for = "dropdown">How much are you satisfied?</label><br>
+            <select name = "satisfaction" id = "dropdown">
+                <option value = 1>Very satisfied</option>
+                <option value = 2>Satisfied</option>
+                <option value = 3>Neutral</option>
+                <option value = 4>Dissatisfied</option>
+                <option value = 5>Very dissatisfied</option>
+                <option value = "N/A" selected = "selected">N/A</option>
+            </select><br>
+            <label id = "improve-label" for = "improve">What we should improve?</label><br>
+            <select name = "improve" id = "improve">
+                <option value = "shopping process">Shopping process</option>
+                <option value = "customer service">Customer service</option>
+                <option value = "variety of products">Variety of products</option>
+                <option value = "overall quality">Overall quality</option>
+                <option value = "price-quality ratio">Price-quality ratio</option>
+                <option value = "N/A" selected = "selected">N/A</option>
+            </select><br>
+            <p>How did you find us?</p>
+            <label for = "facebook">Facebook</label>
+            <input type = "checkbox" id = "facebook" name = "facebook" value = "facebook"><br>
+            <label for = "instagram">Instagram</label>
+            <input type = "checkbox" id = "instagram" name = "instagram" value = "instagram"><br>
+            <label for = "twitter">Twitter</label>
+            <input type = "checkbox" id = "twitter" name = "twitter" value = "twitter"><br>
+            <label for = "friends">Friends</label>
+            <input type = "checkbox" id = "friends" name = "friends" value = "friends"><br>
+            <label for = "different">In a different way</label>
+            <input type = "checkbox" id = "different" name = "different" value = "different"><br>
+            <label for = "customerOpinion">Do you have something to share with us?</label><br>
+            <textarea id = "customerOpinion" name = "customerOpinion" maxlength="200" 
+            placeholder="suggestions etc. (200 characters)"></textarea><br>
+            <p>Would you recommend us to you friend?</p>
+            <label for = "recommendYes">Sure</label>
+            <input type = "radio" id = "recommendYes"  name = "recommend" value = "yes" required>
+            <label for = "recommendNo">Not really</label>
+            <input type = "radio" id = "recommendNo"  name = "recommend" value = "no" required><br>
+            <input type = "submit" id = "submit" name = "submitSurvey" value = "Submit">
+        </form>
+    </body>
+</html>

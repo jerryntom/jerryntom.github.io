@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: Audrey; 
     src: url("resources/fonts/Audrey-Normal.otf")
@@ -8,7 +10,7 @@ body {
     background-color: #dfd5be;
     margin-left: auto;
     margin-right: auto;
-    min-width: 600px;
+    overflow-x: hidden;
 }
 
 #title{
@@ -16,6 +18,7 @@ body {
 }
 
 #description{
+    line-height: normal;
     font-size: 35px;
     margin-bottom: 20px;
 }
@@ -114,11 +117,10 @@ select, option {
 textarea {
     padding: 10px;
     margin: 20px;
-    min-width: 500px;
-    max-width: 500px;
-    min-height: 150px;
-    max-height: 150px;
     font-size: 20px;
+    width: 60%;
+    max-width: 500px;
+    min-height: 100px;
     resize: none;
     outline: none;
     border: none;
@@ -127,7 +129,38 @@ textarea {
     font-family: 'Libre Baskerville';
 }
 
+textarea::-webkit-scrollbar {
+    appearance: none;
+}
+
 label[for = "customerOpinion"] {
     display: inline-block;
     margin-top: 20px;
+}
+
+#footer {
+    display: inline-block;
+    width: 100%;
+    background-color: hwb(45 55% 33%);
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    padding: 5px;
+    color: white;
+}
+
+#footer-content{
+    margin: 0px;
+    font-size: 15px;
+}
+
+.footer-link {
+    color: white;
+}
+
+.footer-link:hover {
+    color: grey;
+}
+
+.footer-link:active {
+    color: black;
 }
